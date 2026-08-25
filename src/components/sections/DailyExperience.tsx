@@ -56,7 +56,7 @@ export function DailyExperience() {
 >
   <PhoneMockup className="w-[10rem] sm:w-[13rem]">
     <img
-      src="/screenshots/daily1.png"
+      src={`${import.meta.env.BASE_URL}screenshots/daily1.png`}
       alt="Twenty One app — daily check-in"
       className="block h-auto w-full"
     />
@@ -64,7 +64,7 @@ export function DailyExperience() {
 
   <PhoneMockup className="w-[10rem] sm:w-[13rem] translate-y-8">
     <img
-      src="/screenshots/daily2.png"
+      src={`${import.meta.env.BASE_URL}screenshots/daily2.png`}
       alt="Twenty One app — daily reflection"
       className="block h-auto w-full"
     />

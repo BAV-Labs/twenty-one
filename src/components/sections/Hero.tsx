@@ -44,7 +44,7 @@ export function Hero() {
             <div ref={parallax.ref} style={parallax.style} className="transition-transform duration-300 ease-out">
               <PhoneMockup className="w-[16rem] sm:w-[18.5rem]">
   <img
-    src="/screenshots/home.png"
+    src={`${import.meta.env.BASE_URL}screenshots/home.png`}
     alt="Twenty One app — Home screen"
     className="h-full w-full object-contain"
   />

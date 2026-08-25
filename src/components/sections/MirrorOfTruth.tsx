@@ -66,7 +66,7 @@ export function MirrorOfTruth() {
 >
   <PhoneMockup className="w-[11rem] sm:w-[14rem]">
     <img
-      src="/screenshots/mirrorOpen.png"
+      src={`${import.meta.env.BASE_URL}screenshots/mirrorOpen.png`}
       alt="Twenty One app — Mirror of Truth opening"
       className="block h-auto w-full"
     />
@@ -74,7 +74,7 @@ export function MirrorOfTruth() {
 
   <PhoneMockup className="w-[13rem] sm:w-[17rem] translate-y-8">
     <img
-      src="/screenshots/mirrorContent.png"
+      src={`${import.meta.env.BASE_URL}screenshots/mirrorContent.png`}
       alt="Twenty One app — Mirror of Truth content"
       className="block h-auto w-full"
     />
