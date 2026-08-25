@@ -1,5 +1,5 @@
 import { Container, Eyebrow, Section } from "@/components/site/primitives";
-import { PhoneMockup, ScreenMirror } from "@/components/site/PhoneMockup";
+import { PhoneMockup } from "@/components/site/PhoneMockup";
 import { Reveal, useParallax } from "@/components/site/Reveal";
 
 const shows = [
@@ -59,11 +59,27 @@ export function MirrorOfTruth() {
           </div>
 
           <Reveal delay={200} className="flex justify-center lg:justify-end">
-            <div ref={parallax.ref} style={parallax.style}>
-              <PhoneMockup className="w-[17rem] sm:w-[19.5rem]">
-                <ScreenMirror />
-              </PhoneMockup>
-            </div>
+            <div
+  ref={parallax.ref}
+  style={parallax.style}
+  className="flex items-end justify-center gap-3 sm:gap-5"
+>
+  <PhoneMockup className="w-[11rem] sm:w-[14rem]">
+    <img
+      src="/screenshots/mirrorOpen.png"
+      alt="Twenty One app — Mirror of Truth opening"
+      className="block h-auto w-full"
+    />
+  </PhoneMockup>
+
+  <PhoneMockup className="w-[13rem] sm:w-[17rem] translate-y-8">
+    <img
+      src="/screenshots/mirrorContent.png"
+      alt="Twenty One app — Mirror of Truth content"
+      className="block h-auto w-full"
+    />
+  </PhoneMockup>
+</div>
           </Reveal>
         </div>
       </Container>

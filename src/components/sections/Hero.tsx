@@ -1,5 +1,5 @@
 import { Container, CTA } from "@/components/site/primitives";
-import { PhoneMockup, ScreenToday } from "@/components/site/PhoneMockup";
+import { PhoneMockup } from "@/components/site/PhoneMockup";
 import { Reveal, useParallax } from "@/components/site/Reveal";
 
 export function Hero() {
@@ -43,8 +43,12 @@ export function Hero() {
           <Reveal delay={200} className="flex justify-center lg:justify-end">
             <div ref={parallax.ref} style={parallax.style} className="transition-transform duration-300 ease-out">
               <PhoneMockup className="w-[16rem] sm:w-[18.5rem]">
-                <ScreenToday />
-              </PhoneMockup>
+  <img
+    src="/screenshots/home.png"
+    alt="Twenty One app — Home screen"
+    className="h-full w-full object-contain"
+  />
+</PhoneMockup>
             </div>
           </Reveal>
         </div>

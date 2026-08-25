@@ -1,5 +1,5 @@
 import { Container, Eyebrow, Headline, Section } from "@/components/site/primitives";
-import { PhoneMockup, ScreenEntry, ScreenToday } from "@/components/site/PhoneMockup";
+import { PhoneMockup } from "@/components/site/PhoneMockup";
 import { Reveal, useParallax } from "@/components/site/Reveal";
 
 const records = [
@@ -50,17 +50,26 @@ export function DailyExperience() {
 
           <Reveal delay={160} className="flex justify-center lg:justify-end">
             <div
-              ref={parallax.ref}
-              style={parallax.style}
-              className="flex items-end gap-4 sm:gap-6"
-            >
-              <PhoneMockup className="hidden w-[13.5rem] translate-y-8 sm:block sm:w-[14.5rem]">
-                <ScreenToday />
-              </PhoneMockup>
-              <PhoneMockup>
-                <ScreenEntry />
-              </PhoneMockup>
-            </div>
+  ref={parallax.ref}
+  style={parallax.style}
+  className="flex items-end justify-center gap-3 sm:gap-5 lg:justify-end"
+>
+  <PhoneMockup className="w-[10rem] sm:w-[13rem]">
+    <img
+      src="/screenshots/daily1.png"
+      alt="Twenty One app — daily check-in"
+      className="block h-auto w-full"
+    />
+  </PhoneMockup>
+
+  <PhoneMockup className="w-[10rem] sm:w-[13rem] translate-y-8">
+    <img
+      src="/screenshots/daily2.png"
+      alt="Twenty One app — daily reflection"
+      className="block h-auto w-full"
+    />
+  </PhoneMockup>
+</div>
           </Reveal>
         </div>
       </Container>
