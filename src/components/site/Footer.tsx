@@ -1,10 +1,10 @@
 import { Container } from "./primitives";
 
 const links = [
-  { label: "How it works", href: "#how-it-works" },
-  { label: "Privacy", href: "#privacy" },
-  { label: "Terms", href: "#terms" },
-  { label: "Contact", href: "#contact" },
+  { label: "How it works", href: `${import.meta.env.BASE_URL}#how-it-works` },
+  { label: "Privacy Policy", href: `${import.meta.env.BASE_URL}privacy` },
+  { label: "Terms of Use", href: `${import.meta.env.BASE_URL}terms` },
+  { label: "Imprint", href: `${import.meta.env.BASE_URL}imprint` },
 ];
 
 export function Footer() {
@@ -14,12 +14,16 @@ export function Footer() {
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div className="max-w-xs">
             <p className="font-display text-xl">Twenty One</p>
+
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               21 days. One conscious choice at a time.
             </p>
           </div>
 
-          <nav className="flex flex-wrap gap-x-8 gap-y-3">
+          <nav
+            aria-label="Footer navigation"
+            className="flex flex-wrap gap-x-8 gap-y-3"
+          >
             {links.map((link) => (
               <a
                 key={link.label}
@@ -33,9 +37,16 @@ export function Footer() {
 
           <div>
             <div className="inline-flex items-center gap-3 rounded-2xl border border-border px-5 py-3.5">
-              <span className="h-8 w-8 rounded-xl bg-secondary" aria-hidden />
+              <span
+                className="h-8 w-8 rounded-xl bg-secondary"
+                aria-hidden
+              />
+
               <span className="text-sm leading-tight">
-                <span className="block text-xs text-muted-foreground">Coming to</span>
+                <span className="block text-xs text-muted-foreground">
+                  Coming to
+                </span>
+
                 <span className="block">the App Store</span>
               </span>
             </div>
